@@ -1,0 +1,98 @@
+@import url("/css/reset.css");
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("/img/map2.jpg") no-repeat center / contain;
+    height: 100vh;
+    width: 100vw; 
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.combat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.epouvantail {
+    transition: transform 0.1s ease-in-out; 
+}
+
+.epouvantail:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0 0 1px red);
+    filter: drop-shadow(0 0 1px red);
+}
+
+.epouvantail:active {
+    transform: scaleY(1.1);
+    filter: saturate(2)
+}
+    
+.ennemi-info {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 33, 33, 0.64); 
+    gap: 10px; 
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    transform: translateY(50px);
+    z-index: 1;
+    color: rgb(203, 203, 203); 
+}
+
+.point-de-vie {
+    background-color: red;
+    padding: 5px 10px; 
+    color: white; 
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+.result-attaque {
+    opacity: 0; 
+    transform: translateX(60px);
+    font-size: 36px; 
+    font-weight: bold;
+    color: red; 
+    transition: all 0.1s ease-in-out;
+}
+
+.result-attaque.show {
+    opacity: 1;
+    transform: translateX(90px);
+}
+
+.kamas {
+    height: 40px; 
+    width: auto; 
+    padding: 0 0px 0 20px; 
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px; 
+    left: 0px; 
+    margin: 10px; 
+    background-color: rgb(24, 24, 24); 
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0px 21px -3px rgba(0,0,0,0.5); 
+}
+
+.kamas-icone {
+    height: 50px; 
+    transform: translateX(-20px);
+}
+
+.montant-kamas {
+    transform: translateX(-20px);
+}
