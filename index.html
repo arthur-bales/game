@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="script.js" defer></script>
-    <title>Game</title> 
-</head>
-<body>
+    <title>Game</title>
+  </head>
+  <body>
+    <header>
+      <div class="item un">
+        <img src="/img/kamas.webp" class="kamas-icone" />
+        <span class="montant-kamas">0</span>
+      </div>
+      <div class="item deux">
+        <img src="img/shop.png" class="shop-icone">
+      </div>
+    </header>
     <section>
-        <div class="kamas">
-            <img src="/img/kamas.webp" class="kamas-icone">
-            <span class="montant-kamas"></span>
+      <div class="combat">
+        <div class="ennemi-info">
+          <p>Epouvantail</p>
+          <span class="point-de-vie"></span>
         </div>
-        <div class="combat">
-            <div class="ennemi-info">
-                <p>Epouvantail</p>
-                <span class="point-de-vie"></span>
-            </div>
-        <img src="/img/epouvantail.png" class="epouvantail">
+        <img src="/img/epouvantail.png" class="epouvantail" />
         <span class="result-attaque">&nbsp;</span>
-        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>

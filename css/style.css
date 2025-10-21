@@ -72,27 +72,47 @@ section {
     transform: translateX(90px);
 }
 
-.kamas {
-    height: 40px; 
-    width: auto; 
-    padding: 0 0px 0 20px; 
+header {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 0px; 
-    left: 0px; 
-    margin: 10px; 
-    background-color: rgb(24, 24, 24); 
+    gap: 20px; 
+    height: 70px; 
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute; 
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    padding: 0 10px; 
+    background-color: rgb(48, 48, 48);
+    color: white; 
     border-radius: 5px;
-    color: white;
-    box-shadow: 0px 0px 21px -3px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.7);
 }
 
 .kamas-icone {
     height: 50px; 
-    transform: translateX(-20px);
 }
 
-.montant-kamas {
-    transform: translateX(-20px);
+.un {
+    width: auto; 
+    padding: 0 10px 0 0; 
+}
+
+.shop-icone {
+    height: 30px; 
+}
+
+.deux {
+    cursor: pointer; 
+    background-color: rgb(46, 127, 168); 
+    transition: all 0.2s ease-in-out;
+}
+
+.deux:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px 0px rgba(0, 38, 255, 0.7);
 }
