@@ -75,4 +75,9 @@ document.addEventListener('touchend', (event) => {
   }
   lastTouchEnd = now;
 }, false);
+
+// Aide de chatGPT pour desactiver le scroll sur safari mobile 
+document.addEventListener('touchmove', function(event) {
+  event.preventDefault();
+}, { passive: false });
 });

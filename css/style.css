@@ -153,7 +153,7 @@ header {
     body {
         display: flex; 
         justify-content: center;
-        height: 100%;
+        height: 100vh;
         overflow: hidden;
     }
 
@@ -168,6 +168,15 @@ header {
 
     .shop {
         width: 300px; 
+    }
+
+    .result-attaque {
+        transform: translateY(-120px);
+        transform: translateX(-50px)
+    }
+
+    .result-attaque.show {
+        transform: translateX(-70px);
     }
 }
 
