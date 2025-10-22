@@ -64,4 +64,15 @@ document.addEventListener("DOMContentLoaded", () => {
   closeShopButton.addEventListener("click", () => {
     shop.style.display = "none";
   });
+
+
+  // Aide de chatGPT pour desactiver le zoom sur mobile (double click)
+  let lastTouchEnd = 0;
+document.addEventListener('touchend', (event) => {
+  const now = Date.now();
+  if (now - lastTouchEnd <= 300) {
+    event.preventDefault(); // bloque le zoom double tap
+  }
+  lastTouchEnd = now;
+}, false);
 });
