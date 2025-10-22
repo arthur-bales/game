@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let lastTouchEnd = 0;
 document.addEventListener('touchend', (event) => {
   const now = Date.now();
-  if (now - lastTouchEnd <= 300) {
+  if (now - lastTouchEnd <= 100) {
     event.preventDefault(); // bloque le zoom double tap
   }
   lastTouchEnd = now;

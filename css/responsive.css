@@ -3,6 +3,7 @@
     body {
         display: flex; 
         justify-content: center;
+        height: 100%;
         overflow: hidden;
     }
 
@@ -11,10 +12,19 @@
     }
 
     .stats {
-        bottom: 1px; 
+        bottom: 0px;
+        margin-bottom: 0px;
+        position: fixed; 
+        background-color: aliceblue;
     }
 
     .shop {
         width: 300px; 
+    }
+}
+
+@media (max-width: 650px) and (min-width: 501px) {
+    .shop {
+        width: 500px; 
     }
 }

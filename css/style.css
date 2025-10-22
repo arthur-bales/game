@@ -56,7 +56,7 @@ section {
 }
 
 .point-de-vie {
-    background-color: blue;
+    background-color: red;
     padding: 5px 10px; 
     color: white; 
     font-weight: bold;
@@ -81,7 +81,7 @@ header {
     display: flex;
     align-items: center;
     gap: 20px; 
-    height: 70px; 
+    height: 100px; 
     padding: 10px; 
     background-color: rgba(255, 255, 255, 0);
     position: absolute; 
@@ -91,7 +91,7 @@ header {
     display: flex;
     align-items: center;
     height: 100%; 
-    padding: 0 10px; 
+    padding: 0 20px; 
     background-color: rgb(48, 48, 48);
     color: white; 
     border-radius: 5px;
@@ -100,11 +100,12 @@ header {
 
 .kamas-icone {
     height: 50px; 
+    transform: translateX(-10px);
 }
 
 .un {
     width: auto; 
-    padding: 0 10px 0 0; 
+    padding: 0 20px; 
 }
 
 .shop-icone {
@@ -124,8 +125,8 @@ header {
 
 .stats {
     height: auto; 
-    width: 140px; 
-    margin: 70px 10px;
+    width: 200px; 
+    margin: 110px 10px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -143,4 +144,35 @@ header {
     margin: 5px 0 15px 0; 
     font-size: 14px; 
     color: white; 
+}
+
+
+
+@media (max-width: 500px){
+
+    body {
+        display: flex; 
+        justify-content: center;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .item {
+        margin-top: 10px; 
+    }
+
+    .stats {
+        bottom: 0px;
+        margin-bottom: 50px;
+    }
+
+    .shop {
+        width: 300px; 
+    }
+}
+
+@media (max-width: 650px) and (min-width: 501px) {
+    .shop {
+        width: 500px; 
+    }
 }
