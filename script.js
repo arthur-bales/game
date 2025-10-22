@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let kamas = document.querySelector(".montant-kamas");
 
   const displayPointDeVie = document.querySelector(".point-de-vie");
-  let hp = 1000;
+  let hp = 100000;
   const mob = document.querySelector(".epouvantail");
   const displayResultAttaque = document.querySelector(".result-attaque");
   let attaque = 1;
 
-  displayPointDeVie.innerText = hp + " / 1000";
+  displayPointDeVie.innerText = hp.toLocaleString("fr-FR") + " HP";
   let statAttaque = document.querySelector(".stat-attaque");
   statAttaque.innerText = "- Attaque : " + attaque;
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hp > 0) {
       hp = hp - attaque;
       click++;
-      displayPointDeVie.innerText = hp + " / 1000";
+      displayPointDeVie.innerText = hp.toLocaleString("fr-FR") + " HP";
       displayResultAttaque.innerText = "- " + attaque;
       displayResultAttaque.classList.add("show");
       setTimeout(() => {
