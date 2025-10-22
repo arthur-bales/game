@@ -10,7 +10,9 @@ let attaque = 1;
 
 displayPointDeVie.innerText = hp + " / 1000";
 
-const buyTest = document.querySelector(".test"); //Button Buy
+
+// Button Buy --------------------------------------------
+const buyTest = document.querySelector(".buy"); 
 
 function buy() {
     click = click - 10;
@@ -20,6 +22,7 @@ function buy() {
     alert("+ 1 attaque")
 }
 
+// Fonctionnalité GamePlay ------------------------------
 mob.addEventListener("click", () => {
   if (hp > 0) {
     hp = hp - attaque;
@@ -40,13 +43,23 @@ mob.addEventListener("click", () => {
         buyTest.addEventListener("click", () => {
         if (click >= 10){
         buy();
+        } else {
+            alert("Pas assez de kamas")
         }
       });
 
-// Bouton shop
-const ShopButton = document.querySelector(".deux");
-ShopButton.addEventListener("click", () => {
-  console.log("click ok !");
+
+// Bouton shop -------------------------------------
+const shop = document.querySelector(".shop"); 
+const shopButton = document.querySelector(".deux");
+const closeShopButton = document.querySelector(".closeShop");
+shopButton.addEventListener("click", () => {
+  shop.style.display = "block";
+  console.log("teste")
 });
+
+closeShopButton.addEventListener("click", ()=> {
+    shop.style.display = "none"; 
+})
 
 });
